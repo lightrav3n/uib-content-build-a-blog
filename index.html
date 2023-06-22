@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header id="home">
+        <div id="logo">
+          <img src="./images/logo.png" height="50" alt="Dino" />
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="./index.html" class="current">Home</a></li>
+            <li><a href="./posts/post-1.html">Brontosaurus</a></li>
+            <li><a href="./posts/post-2.html">Tyrannosaurus</a></li>
+            <li><a href="./posts/post-3.html">Velociraptor</a></li>
+         
+          </ul>
+        </nav>
+  
+        <div id="icons_header">
+          <a
+            href="https://www.facebook.com/groups/2417144643"
+            title="Facebook"
+            target="_blank"
+            ><img src="./images/facebook.png" width="30" alt="facebook logo"
+          /></a>
+          <a
+            href="https://www.instagram.com/paleontology/?hl=en"
+            title="Instagram"
+            target="_blank"
+            ><img src="./images/instagram.png" width="30" alt="instagram logo"
+          /></a>
+        </div>
+      </header>
+
+  
+
+
+
+
+      <main>
+        <div class="home">
+          <video autoplay muted loop>
+            <source
+            src="./video/pexels-julian-johnsonmortimer-6380245-1920x1080-24fps.mp4"
+            type="video/mp4"
+          />
+          </video>
+          <div class="overlay"></div>
+          <div class="home-content">
+            <h1>
+              <span id="top_text">the lizards we know as</span>
+              <span id="bottom_text">DINOSAURS</span>
+            </h1>
+            <p id="statement">
+                Dinosaurs are varied from taxonomic, morphological and ecological standpoints. Birds, at over 10,700 living species, are among the most diverse groups of vertebrates. Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs.
+            </p>
+  
+            <a href="#products"><button>DISCOVER</button></a>
+          </div>
+        </div>
+  
+        <section class="products" id="products">
+          <article class="products_article">
+            <div class="icon">
+              <img
+                src="./images/Brontosaurus.png"
+                alt="Brontosaurus"
+                width="220"
+              />
+            </div>
+            <div>
+              <h2>Brontosaurus</h2>
+            </div>
+            <div>
+              <p>
+                Brontosaurus (meaning "thunder lizard" from the Greek words βροντή, brontē "thunder" and σαῦρος, sauros "lizard") is a genus of herbivorous sauropod dinosaur that lived in the United States during the Late Jurassic period.
+              </p>
+            </div>
+  
+            <a class="button1" href="./posts/post-1.html"><button>See More</button></a>
+          </article>
+          <article class="products_article">
+            <div class="icon">
+              <img src="./images/Scotty_Tyrannosaurus.jpg" alt="Tyrannosaurus" width="200"  />
+            </div>
+            <div>
+              <h2>Tyrannosaurus</h2>
+            </div>
+            <div>
+              <p>
+                Tyrannosaurus is a genus of large theropod dinosaur. The species Tyrannosaurus rex (rex meaning "king" in Latin), often called T. rex or colloquially T-Rex, is one of the best represented theropods. It lived throughout what is now western North America, on what was then an island continent known as Laramidia. 
+              </p>
+            </div>
+  
+            <a class="button1" href="./posts/post-2.html"><button>See More</button></a>
+          </article>
+          <article class="products_article">
+            <div class="icon">
+              <img src="./images/Velociraptor_Wyoming_Dinosaur_Center.jpg" alt="Velociraptor" width="100" />
+            </div>
+            <div>
+              <h2>Velociraptor</h2>
+            </div>
+            <div>
+              <p>
+                Velociraptor is a genus of small dromaeosaurid dinosaur that lived in Asia during the Late Cretaceous epoch, about 75 million to 71 million years ago. Two species are currently recognized, although others have been assigned in the past.
+              </p>
+            </div>
+            <a class="button1" href="./posts/post-3.html"><button>See More</button></a>
+        </section>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="#">Site Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+  
+        <div id="icons_header">
+          <a
+            href="https://www.facebook.com/groups/2417144643"
+            title="Facebook"
+            target="_blank"
+            ><img src="./images/facebook (1).png" width="20" alt="facebook logo"
+          /></a>
+          <a
+            href="https://www.instagram.com/paleontology/?hl=en"
+            title="Instagram"
+            target="_blank"
+            ><img
+              src="./images/instagram (1).png"
+              width="20"
+              alt="instagram logo"
+          /></a>
+        </div>
+      </footer>
+      
+      <script>
+        window.onscroll = function () {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 100 ||
+            document.documentElement.scrollTop > 100
+          ) {
+            document.getElementById("home").style.height = "40px";
+          } else {
+            document.getElementById("home").style.height = "90px";
+          }
+        }
+      </script>
+</body>
+</html>
